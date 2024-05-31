@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 8080
+const port = 3000
 
 const mysql = require('mysql')
 const connection = mysql.createConnection({
@@ -30,4 +30,4 @@ app.get('/', (request, response) => {
     })
 })
 
-app.listen(port, () => console.log("server running on port 8080"))
+app.listen(port, () => console.log("server running on port 3000"))
